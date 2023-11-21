@@ -19,25 +19,25 @@ Another area where the copper industry faces challenges is in capturing the lead
 ## Solution Steps
 1.Data Understanding: Identify the types of variables (continuous, categorical) and their distributions. Treat reference columns as categorical variables. INDEX may not be useful.
 
-2.Data Preprocessing:
+### 2.Data Preprocessing:
 
 Handle missing values with mean/median/mode.
 Treat outliers using IQR or Isolation Forest from sklearn library.
 Identify Skewness in the dataset and treat skewness with appropriate data transformations.
 Encode categorical variables using suitable techniques.
-3.EDA:
+### 3.EDA:
 
 Visualize outliers and skewness using Seaborn’s boxplot, distplot, violinplot.
-4.Feature Engineering:
+### 4.Feature Engineering:
 
 Engineer new features if applicable.
 Drop highly correlated columns.
-5.Model Building and Evaluation:
+### 5.Model Building and Evaluation:
 
 Split the dataset into training and testing sets.
 Train and evaluate different classification models (e.g., ExtraTreesClassifier, XGBClassifier, Logistic Regression) using appropriate evaluation metrics.
 Optimize model hyperparameters using techniques such as cross-validation and grid search.
-6.Model GUI (Streamlit):
+### 6.Model GUI (Streamlit):
 
 Create an interactive page where users can input values for prediction.
 Perform the same feature engineering, scaling, and transformation steps used for training the models.
